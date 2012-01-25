@@ -94,6 +94,8 @@ public class XcraftGate extends JavaPlugin {
 	}
 
 	public void onEnable() {
+		/* Users are responsible for reading.
+		 * Solves an issue with different version formatting
 		String cbVersionString = this.getServer().getVersion().replaceAll("^.*b([0-9]+)jnks.*$", "$1");
 		if (cbVersionString.length() > 0) {
 			if (Integer.parseInt(cbVersionString) < minCBVersion) {
@@ -101,7 +103,7 @@ public class XcraftGate extends JavaPlugin {
 				// FIXME: need to find a save way to disable myself without losing my config
 				return;
 			}
-		}
+		}*/
 		
 		pm = new PluginManager(this);
 		
