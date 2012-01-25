@@ -32,8 +32,6 @@ public class XcraftGate extends JavaPlugin {
 
 	private PluginManager pm = null;
 	
-	private static final Integer minCBVersion = 1317;
-
 	private SetWorld worlds = new SetWorld(this);
 	private SetGate gates = new SetGate(this);
 	
